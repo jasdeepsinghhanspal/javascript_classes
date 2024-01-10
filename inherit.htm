@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    class cal1{
+        constructor(a){
+            this.a=a;
+        }
+        square(){
+            document.write("square=",this.a*this.a,"<br>");
+        }
+    }
+    class cal2 extends cal1{
+    constructor(a,b){
+        super(a);
+        this.b=b;
+    }
+    cube(){
+        document.write("cube=",this.b*this.b*this.b);
+    }
+    }
+    let obj=new cal2(4,5);
+    obj.square();
+    obj.cube();
+ </script>   
+</body>
+</html>
