@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="s1">JavaScript class</h1>
+  <script>
+    //static=static methods  cannot be called with object they need to be called by classname 
+    class hello{
+        static say(){
+        return "hello javascript class";
+        }
+    }
+    var obj=new hello();
+    document.getElementById("s1").innerHTML=hello.say();
+
+
+  </script>  
+</body>
+</html>

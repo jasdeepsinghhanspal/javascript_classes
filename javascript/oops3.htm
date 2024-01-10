@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class calculation{
+            constructor(a,b){
+                this.a=a;
+                this.b=b;
+            }
+            add(){
+                document.write("addition=",this.a+this.b,"<br>");
+            }
+            sub(){
+                document.write("substraction=",this.a-this.b);
+            }
+        }
+        let obj=new calculation(5,4);
+        obj.add();
+        obj.sub();
+    </script>
+</body>
+</html>

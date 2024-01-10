@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(a, b) {
+            console.log(a + b);
+        }
+
+        var a = prompt("enter the no");
+        a = Number(a);
+
+        var b = prompt("enter the no"); // Fix: Use variable 'b' here
+        b = Number(b); // Fix: Use variable 'b' here
+
+        var c = prompt("enter a choice");
+        c = Number(c);
+
+        switch (c) {
+            case 1:
+                add(a, b);
+                break;
+            case 2:
+                document.write("check the number");
+                break;
+        }
+    </script>
+</body>
+</html>

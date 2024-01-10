@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<style>
+#b1 {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+#b2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: absolute;
+  background-color: black;
+}
+</style>
+<body>
+
+<p><button onclick="Move()">Click Me</button></p> 
+<p><button onclick="reset()">reset</button></p> 
+<div id ="b1">
+  <div id ="b2"></div>
+</div>
+
+<script>
+function Move() {
+  let id = null;
+  const elem = document.getElementById("b2");   
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
+</body>
+</html>

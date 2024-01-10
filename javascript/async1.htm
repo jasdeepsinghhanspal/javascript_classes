@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="iiht"></h2>
+
+<script>
+async function myDisplay() {
+  let myPromise = new Promise(function(resolve, reject) {
+    resolve("My Name is Roney");
+  });
+  document.getElementById("iiht").innerHTML = await myPromise;
+}
+
+myDisplay();
+</script>
+
+</body>
+</html>
